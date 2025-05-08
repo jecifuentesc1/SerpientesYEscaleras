@@ -314,7 +314,7 @@ function startGame(numPlayers) {
   movePlayer(player2, 0);
   updateScores();
   isPlaying = true;
-  isBot = true; // Jugador 2 siempre bot
+  isBot = (numPlayers === 1); 
   turn = 0;
   jugadorEnTurnoTiro = false;
 }
