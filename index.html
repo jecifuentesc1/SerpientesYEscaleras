@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Tablero - Escaleras y Serpientes</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.0/dist/gsap.min.js"></script>
+</head>
+
+<body>
+    <!-- UI -->
+    <div id="menu">
+        <h1>Juego de Escaleras y Serpientes</h1>
+        <p style="color: white; font-size: 20px;">Selecciona número de jugadores:</p>
+        <div style="display: flex; gap: 20px;">
+            <button onclick="startGame(1)">1 Jugador</button>
+            <button onclick="startGame(2)">2 Jugadores</button>
+        </div>
+    </div>
+
+    <div id="ui">
+        <div id="scoreBoard">
+            <div><strong>Jugador 1 (🔴):</strong> <span id="score1">0</span></div>
+            <div><strong>Jugador 2 (🟢):</strong> <span id="score2">0</span></div>
+        </div>
+        <button id="rollButton" style="display:none;">Tirar dado</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="mygame.js"></script>
+</body>
+
+</html>
